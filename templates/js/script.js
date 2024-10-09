@@ -723,7 +723,7 @@
                 $("#loader").css("display", "inline-block");
                 $.ajax({
                     type: "POST",
-                    url: "/wish",
+                    url: "https://script.google.com/macros/s/AKfycbzDxZuQI0VNeIzHwsBZbDDIQdzfLCmbM9Gi85WegqGiPSvVcAszc4527slbNQ0ZTHoYug/exec",
                     data: $(form).serialize(),
                     success: function (res) {
                         $("#loader").hide();
