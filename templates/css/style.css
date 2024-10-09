@@ -3286,7 +3286,7 @@ img {
     height: 30px;
     line-height: 20px;
     padding: 5px;
-    background-color: rgb(200, 157, 156);
+    background-color: rgb(224, 63, 61);
     color: #fff;
     border-radius: 50%;
 }
@@ -8239,7 +8239,7 @@ img {
   position: absolute;
   left: -150px;
   top: -100px;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 @media (max-width: 991px) {
@@ -8259,7 +8259,7 @@ img {
   position: absolute;
   right: -120px;
   bottom: -100px;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 @media (max-width: 991px) {
