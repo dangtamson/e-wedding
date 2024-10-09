@@ -30,7 +30,7 @@ const MODE_READWRITE = 'readwrite';
 const INDEX_SKIN_UNICODE = 'skinUnicodes';
 const FIELD_SKIN_UNICODE = 'skinUnicodes';
 
-const DEFAULT_DATA_SOURCE = '/e-wedding/common/emoji-picker/js/data.json';
+const DEFAULT_DATA_SOURCE = '/common/emoji-picker/js/data.json';
 const DEFAULT_LOCALE = 'en';
 
 // like lodash's uniqBy but much smaller
