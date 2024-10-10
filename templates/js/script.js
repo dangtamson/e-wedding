@@ -277,6 +277,10 @@
                     $(".fancybox-wrap").addClass("gallery-fancybox");
                 }
             });
+            console.log("offmusic")
+            audioPlayer.pause();
+            document.getElementById("playerVolumeOff").style.display = "block";
+            document.getElementById("playerVolumeOn").style.display = "none";
             return false
         });
     }
