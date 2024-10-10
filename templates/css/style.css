@@ -398,39 +398,51 @@ img {
 }
 
 .section-title:before {
-  content: "";
-  background: url("../images/sec-title-flower.png") center center/cover no-repeat local;
-  width: 126px;
-  height: 59px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 0;
-}
-
-.section-title h2 {
-	font-family: "dancing_scriptregular", cursive;
-  font-size: 36px;
-  font-weight: 600;
-  margin: 0 0 0.39em;
+    content: "";
+    background: url(../images/sec-title-flower.png) center center/cover no-repeat local;
+    width: 385px;
+    height: 263px;
+    position: absolute;
+    left: 45%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -24px;
 }
 
 @media (max-width: 991px) {
-  .section-title h2 {
-    font-size: 30px;
-    font-size: 2rem;
-  }
+    .section-title:before {
+        width: 299px;
+        height: 194px;
+        top: 9px;
+    }
+}
+
+.section-title h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 46px;
+    color: #925b48;
+    margin: 5px 0 20px;
+    padding: 10px 25px;
+    border-top: 2px solid rgba(182, 155, 134, 0.10);
+    border-bottom: 2px solid rgba(182, 155, 134, 0.10);
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 991px) {
+    .section-title h2 {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 767px) {
-  .section-title h2 {
-    font-size: 25px;
-    font-size: 1.66667rem;
-  }
+    .section-title h2 {
+        font-size: 30px;
+    }
 }
 
 .section-title p {
@@ -3381,6 +3393,7 @@ img {
 
 .invitation-section .invitation-box h2 {
   font-family: "Great Vibes", cursive;
+  color: #925b48;
   font-size: 50px;
   font-size: 3.33333rem;
   margin: 0 0 0.6em;
@@ -8302,4 +8315,96 @@ img {
     top: 20px;
     border: 3px solid rgb(129 103 103 / 70%);
   }
+}
+
+.preloader .preloader-title {
+    font-size: 20pt;
+    color: #c89d9c;;
+    line-height: .9;
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: 'Marmelad', sans-serif
+}
+
+.reloader .preloader-title small {
+    color: #c89d9c;;
+    line-height: .9;
+    font-size: 12pt
+}
+
+.loading-heart {
+    fill: transparent;
+    stroke: #c89d9c;
+    stroke-width: 11;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block
+}
+
+.loading-heart svg {
+    overflow: visible;
+    width: 11rem
+}
+
+.loading-heart path {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+    transform-origin: center;
+    -webkit-animation: stroke-animation 3s ease-in-out infinite forwards;
+    -khtml-animation: stroke-animation 3s ease-in-out infinite forwards;
+    -moz-animation: stroke-animation 3s ease-in-out infinite forwards;
+    -ms-animation: stroke-animation 3s ease-in-out infinite forwards;
+    -o-animation: stroke-animation 3s ease-in-out infinite forwards;
+    animation: stroke-animation 3s ease-in-out infinite forwards
+}
+
+@keyframes stroke-animation {
+    0% {
+        stroke-dashoffset: 0
+    }
+
+    30% {
+        stroke-dashoffset: 1550
+    }
+
+    60% {
+        stroke-dashoffset: 3100;
+        fill: transparent;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1)
+    }
+
+    100% {
+        stroke-dashoffset: 3100
+    }
+}
+
+.btn-menu-open .access-icon{
+	height: 35px;
+	width: auto;
+	margin-top: 2px;
+  margin-left: 2px;
+}
+
+.btn-menu-close .access-icon{
+	height: 35px;
+	width: auto;
+	margin-top: 2px;
+  margin-left: 2px;
 }
