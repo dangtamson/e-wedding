@@ -2597,6 +2597,55 @@ img {
   }
 }
 
+#clock2 {
+  color: #fff;
+  overflow: hidden;
+}
+
+#clock2 > div {
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding: 30px 15px 0;
+	color: rgb(200, 157, 156);
+}
+
+#clock2 .box > div {
+	font-family: "Great Vibes", cursive;
+	font-size: 4rem;
+	margin-bottom: 0.1em;
+	line-height: .8em;
+}
+
+@media (max-width: 1199px) {
+  #clock2 .box > div {
+    font-size: 52px;
+    font-size: 3.46667rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #clock2 .box > div {
+    font-size: 30px;
+    font-size: 2rem;
+    line-height: 1.3em;
+  }
+}
+
+#clock2 .box span {
+  font-size: 14px;
+  font-size: 0.93333rem;
+  font-weight: 200;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  #clock2 .box span {
+    font-size: 12px;
+    font-size: 0.8rem;
+  }
+}
+
 /*--------------------------------------------------------------
 	static-hero
 --------------------------------------------------------------*/
